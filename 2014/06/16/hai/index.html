@@ -3,15 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | sandyfog&#39;s blog</title>
+  <title>Markdown语法 | sandyfog&#39;s blog</title>
   <meta name="author" content="sandyfog">
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+  <meta name="description" content="Markdown语法
+1.标题
+Markdown提供了两种方式（Setext和Atx）来显示标题。
+语法：
+Setext方式
+标题1
+标题2
+Atx方式
+标题1
+标题2
+标题6">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Hello World"/>
+  <meta property="og:title" content="Markdown语法"/>
   <meta property="og:site_name" content="sandyfog&#39;s blog"/>
 
   
@@ -51,49 +61,133 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-06-16T08:03:51.000Z"><a href="/2014/06/16/hello-world/">6月 16 2014</a></time>
+        <time datetime="2014-06-16T09:01:19.000Z"><a href="/2014/06/16/hai/">6月 16 2014</a></time>
       
       
   
-    <h1 class="title">Hello World</h1>
+    <h1 class="title">Markdown语法</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/tommy351/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo new <span class="string">"My New Post"</span>
-</pre></td></tr></table></figure>
+        <h1 id="Markdown语法">Markdown语法</h1>
+<h2 id="1-标题">1.标题</h2>
+<p>Markdown提供了两种方式（Setext和Atx）来显示标题。</p>
+<h3 id="语法：">语法：</h3>
+<p>Setext方式</p>
+<h1 id="标题1">标题1</h1>
+<h2 id="标题2">标题2</h2>
+<p>Atx方式</p>
+<h1 id="标题1-1">标题1</h1>
+<h2 id="标题2-1">标题2</h2>
+<h6 id="标题6">标题6</h6>
+<a id="more"></a>
 
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo server
-</pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo generate
-</pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo deploy
-</pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h2 id="2-换行">2.换行</h2>
+<p>在文字的末尾使用两个或两个以上的空格来表示换行。</p>
+<h2 id="3-引用">3.引用</h2>
+<p>行首使用&gt;加上一个空格表示引用段落，内部可以嵌套多个引用。</p>
+<h3 id="语法：-1">语法：</h3>
+<blockquote>
+<p>这是一个引用，<br>这里木有换行，<br>在这里换行了。</p>
+<blockquote>
+<p>内部嵌套</p>
+</blockquote>
+</blockquote>
+<h2 id="4-列表">4.列表</h2>
+<p>无序列表使用*、+或-后面加上空格来表示。</p>
+<h3 id="语法：-2">语法：</h3>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<p>有序列表使用数字加英文句号加空格表示。</p>
+<h3 id="语法：-3">语法：</h3>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+<h2 id="5-代码区域">5.代码区域</h2>
+<p>行内代码使用反斜杠`表示。</p>
+<p>代码段落则是在每行文字前加4个空格或者1个缩进符表示。</p>
+<h3 id="语法：-4">语法：</h3>
+<p>Bash中可以使用echo来进行输出。</p>
+<pre><code>$ <span class="built_in">echo</span> <span class="string">'Something'</span>
+$ <span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">'\tSomething\n'</span>
+</code></pre><p><code>cat 1.txt</code></p>
+<h2 id="6-强调">6.强调</h2>
+<p>Markdown使用*或_表示强调。</p>
+<h3 id="语法：-5">语法：</h3>
+<p>单星号 = <em>斜体</em></p>
+<p>单下划线 = <em>斜体</em></p>
+<p>双星号 = <strong>加粗</strong></p>
+<p>双下划线 = <strong>加粗</strong></p>
+<h2 id="7-链接">7.链接</h2>
+<p>Markdown支持两种风格的链接：Inline和Reference。</p>
+<h3 id="语法：-6">语法：</h3>
+<p><strong>Inline</strong>：以中括号标记显示的链接文本，后面紧跟用小括号包围的链接。如果链接有title属性，则在链接中使用空格加”title属性”。</p>
+<p><strong>Reference</strong>：一般应用于多个不同位置使用相同链接。通常分为两个部分，调用部分为<a href="http://equation85.github.com" target="_blank" rel="external">链接文本</a>；定义部分可以出现在文本中的其他位置，格式为<a href="http://equation85.github.com" target="_blank" rel="external">ref</a>: <a href="http://some/link/address" target="_blank" rel="external">http://some/link/address</a> (可选的标题)。</p>
+<p>注：ref中不区分大小写。</p>
+<p>这是一个Inline<a href="http://equation85.github.com" title="可选的title" target="_blank" rel="external">示例</a>。</p>
+<p>这是一个Reference<a href="http://equation85.github.com" target="_blank" rel="external">示例</a>。</p>
+<h2 id="8-图片">8.图片</h2>
+<p>图片的使用方法基本上和链接类似，只是在中括号前加<strong>叹号</strong>。</p>
+<p><strong>注：Markdown不能设置图片大小，如果必须设置则应使用HTML标记<img>。</strong></p>
+<h3 id="语法：-7">语法：</h3>
+<p>Inline示例：<img src="/assets/images/jian.jpg" alt="替代文本" title="可选的title"></p>
+<p>Reference示例：<img src="/assets/images/ship.jpg" alt="替代文本" title="可选的title"></p>
+<p>HTML示例：<img src="/assets/images/jian.jpg" alt="替代文本" title="标题文本" width="200"></p>
+<h2 id="9-其他">9.其他</h2>
+<p><strong>自动链接</strong></p>
+<p>使用<strong>尖括号</strong>，可以为输入的URL或者邮箱自动创建链接。如<a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x74;&#101;&#x73;&#116;&#x40;&#x64;&#111;&#x6d;&#97;&#x69;&#x6e;&#x2e;&#x63;&#x6f;&#x6d;">&#x74;&#101;&#x73;&#116;&#x40;&#x64;&#111;&#x6d;&#97;&#x69;&#x6e;&#x2e;&#x63;&#x6f;&#x6d;</a>。</p>
+<p><strong>分隔线</strong></p>
+<p>在一行中使用三个或三个以上的*、-或_可以添加分隔线，其中可以有空白，但是不能有其他字符。</p>
+<h2 id="*"><em>*</em></h2>
+<hr>
+<p><strong>转义字符</strong></p>
+<p>Markdown中的转义字符为\，可以转义的有：</p>
+<p>\ 反斜杠</p>
+<p>` 反引号</p>
+<p>* 星号</p>
+<p>_ 下划线</p>
+<p>{} 大括号</p>
+<p>[] 中括号</p>
+<p>() 小括号</p>
+<p># 井号</p>
+<p>+ 加号</p>
+<p>- 减号</p>
+<p>. 英文句号</p>
+<p>! 感叹号</p>
 
       
     </div>
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/blog/">blog</a>
+  </div>
+
         
+  
+  <div class="tags">
+    <a href="/tags/博客/">博客</a>, <a href="/tags/文章/">文章</a>
+  </div>
+
         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
       
@@ -105,8 +199,10 @@
 
 <nav id="pagination" >
     
-    <a href="/2014/06/16/hai/" class="alignleft prev" >上一页</a>
+    <a href="/2014/06/17/qie/" class="alignleft prev" >上一页</a>
     
+    
+    <a href="/2014/06/16/hello-world/" class="alignright next" >下一页</a>
     
     <div class="clearfix"></div>
 </nav>
@@ -117,7 +213,7 @@
 <!--	<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div> -->
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
- <div class="ds-thread" data-thread-key="2014/06/16/hello-world/"></div>  
+ <div class="ds-thread" data-thread-key="2014/06/16/hai/"></div>  
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"sandyfog"};
 	(function() {
